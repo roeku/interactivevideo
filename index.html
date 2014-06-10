@@ -103,18 +103,7 @@
                 }
             }
         }
-        function trailer () {
-            
-         var trailer = document.getElementById("myVideo");
-         var stop = 4;
-         trailer.currentTime = 0;
-            console.log(trailer.currentTime);
-            
-            if (stop < trailer.currentTime) {
-                console.log(trailer.currentTime);
-                document.getElementById("t1").innerHTML = "<h1 class=\"center aligned ui header\">Interactive  <i class='music icon'></i> video</h1><h2 class=\"center aligned ui header\">make your own music anywhere, anytime with anything!</h2><h2 class=\"center aligned ui header\"><i class=\"arrow sign down icon large inverted\"></i></h2>";
-        }
-    }
+
     </script>
 
 </head>
@@ -233,7 +222,7 @@
                 <div class="column">
                     <div class="ui header">Source code</div>
                     <div class="ui link list">
-                        <a class="item" href="https://github.com/roeku/interactivevideo/edit/master/"><i class="github big teal icon"></i></a>
+                        <a class="item" href="https://github.com/roeku/interactivevideo"><i class="github big teal icon"></i></a>
                     </div>
                 </div>
                 <div class="column">
@@ -246,7 +235,7 @@
                 <div class="column">
                     <div class="ui header">MAD-Faculty</div>
                     <div class="ui link list">
-                        <a class="item">2CMDi &#124; AV kunsten</a>
+                        <a class="item">AV kunsten</a>
                         <a class="item">Jasper Vrancken</a>
                     </div>
                 </div>
@@ -255,14 +244,12 @@
     </div>
     <script>
         window.onload = function () {
+            console.log('boeh');
             play();
-        }
-        
-        window.onload = function() {
-            setTimeout(function () {
+        setTimeout(function () {
             var trailer = document.getElementById("myVideo");
             document.getElementById("t1").innerHTML = "<h1 class=\"center aligned ui header\">Interactive  <i class='music icon'></i> video</h1><h2 class=\"center aligned ui header\">make your own music anywhere, anytime with anything!</h2><h2 class=\"center aligned ui header\"><i class=\"arrow sign down icon large inverted\"></i></h2>";;}, 18000); 
-        }
+			}
     </script>
 </body>
 
